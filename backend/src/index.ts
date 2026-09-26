@@ -13,6 +13,7 @@ const bootstrap = async (): Promise<void> => {
 
   app.listen(PORT, () => {
     console.log(` http://localhost:${PORT}`);
+    console.log(`🚀 Servidor ejecutándose en producción en el puerto ${PORT} (Versión v2.0)`);
   });
 };
 
