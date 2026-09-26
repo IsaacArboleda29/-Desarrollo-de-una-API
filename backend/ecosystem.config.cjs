@@ -18,7 +18,7 @@ module.exports = {
       repo: "git@github.com:IsaacArboleda29/-Desarrollo-de-una-API.git",
       path: "/var/www/mi-app",
       "post-deploy": "cd backend && npm install && npm run build && mkdir -p logs && pm2 reload ecosystem.config.cjs --env production && pm2 save",
-      ssh_options: "IdentityFile=~/.ssh/C:\Users\Isaac\OneDrive\Desktop\ClaveServer.pem",
+      ssh_options: "IdentityFile=/c/Users/Isaac/OneDrive/Desktop/ClaveServer.pem",
     },
   },
 };
